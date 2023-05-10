@@ -20,40 +20,48 @@ namespace TDDKata.Tests
         public void Add_TextInExpr_Throws()
         {
             var expr = "dfhsdfh";
+            var expected = -1;
 
             var sut = new Calc();
 
-            Assert.Throws<ArgumentException>(() => sut.Add(expr));
+            var res = sut.Add(expr);
+            Assert.Equal(expected, res);
         }
 
         [Fact]
         public void Add_OneOfArgumentIsNotValidInt_Throws()
         {
             var expr = "1 dfhsdfh";
+            var expected = -1;
 
             var sut = new Calc();
 
-            Assert.Throws<ArgumentException>(() => sut.Add(expr));
+            var res = sut.Add(expr);
+            Assert.Equal(expected, res);
         }
 
         [Fact]
         public void Add_OneOfArgumentIsNotInIntRange_Throws()
         {
             var expr = "234623467245734572344634";
+            var expected = -1;
 
             var sut = new Calc();
 
-            Assert.Throws<ArgumentException>(() => sut.Add(expr));
+            var res = sut.Add(expr);
+            Assert.Equal(expected, res);
         }
 
         [Fact]
         public void Add_ToMuchArgument_Throws()
         {
             var expr = "1 2 3";
+            var expected = -1;
 
             var sut = new Calc();
 
-            Assert.Throws<ArgumentException>(() => sut.Add(expr));
+            var res = sut.Add(expr);
+            Assert.Equal(expected, res);
         }
 
         [Fact]
