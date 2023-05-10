@@ -2,3 +2,4 @@ Create a simple String calculator with a method int Add(string numbers)The meth
 Start with the simplest test case of an empty string and move to 1 and 2 numbers
 Remember to solve things as simply as possible so that you force yourself to write tests you did not think about
 Remember to refactor  after each passing test
+In case of an error return -1
