@@ -23,8 +23,7 @@ namespace TDDKata.Tests
 
             var sut = new Calc();
 
-            var res = sut.Add(expr);
-            Assert.Throws<Exception>(() => sut.Add(expr));
+            Assert.Throws<ArgumentException>(() => sut.Add(expr));
         }
 
         [Fact]
@@ -34,8 +33,7 @@ namespace TDDKata.Tests
 
             var sut = new Calc();
 
-            var res = sut.Add(expr);
-            Assert.Throws<Exception>(() => sut.Add(expr));
+            Assert.Throws<ArgumentException>(() => sut.Add(expr));
         }
 
         [Fact]
@@ -45,8 +43,7 @@ namespace TDDKata.Tests
 
             var sut = new Calc();
 
-            var res = sut.Add(expr);
-            Assert.Throws<Exception>(() => sut.Add(expr));
+            Assert.Throws<ArgumentException>(() => sut.Add(expr));
         }
 
         [Fact]
@@ -56,8 +53,7 @@ namespace TDDKata.Tests
 
             var sut = new Calc();
 
-            var res = sut.Add(expr);
-            Assert.Throws<Exception>(() => sut.Add(expr));
+            Assert.Throws<ArgumentException>(() => sut.Add(expr));
         }
 
         [Fact]
