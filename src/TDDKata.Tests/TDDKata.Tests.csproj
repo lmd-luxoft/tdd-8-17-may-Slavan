@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TDDKata.Lib\TDDKata.Lib.csproj" />
+  </ItemGroup>
+
 </Project>
